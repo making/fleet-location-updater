@@ -1,0 +1,19 @@
+server:
+  port: 9007
+#spring:
+#  cloud:
+#    stream:
+#      bindings:
+#        input.destination: vehicles
+eureka.instance.hostname: localhost
+eureka.instance.leaseRenewalIntervalInSeconds: 5
+---
+spring:
+  profiles: test
+ribbon:
+  eureka:
+    enabled: false
+service-location-service:
+  ribbon:
+    listOfServers: localhost:9001
+hystrix.command.default.execution.isolation.strategy: SEMAPHORE
