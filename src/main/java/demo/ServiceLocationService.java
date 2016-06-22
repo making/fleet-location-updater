@@ -21,7 +21,7 @@ public class ServiceLocationService {
     private static final Logger LOGGER = LoggerFactory.getLogger(ServiceLocationService.class);
 
     @Autowired
-    @LoadBalanced
+    //@LoadBalanced
     private RestTemplate restTemplate;
 
     /**

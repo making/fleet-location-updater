@@ -42,7 +42,7 @@ public class FleetLocationUpdaterApplication {
     }
 
     @Bean
-    @LoadBalanced
+    //@LoadBalanced
     RestTemplate restTemplate() {
         return new RestTemplate();
     }
