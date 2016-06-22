@@ -51,7 +51,7 @@ public class ServiceLocationService {
             case SERVICE_SOON:
             case STOP_NOW:
                 ResponseEntity<Resource<ServiceLocation>> result = this.restTemplate.exchange(
-                        "http://service-location-service/serviceLocations/search/findFirstByLocationNear?location={lat},{long}",
+                        "http://go-fleet-service-locator.52.68.100.51.xip.io/locationService/{lat}/{long}",
                         HttpMethod.GET, new HttpEntity<>((Void) null),
                         new ParameterizedTypeReference<Resource<ServiceLocation>>() {
                         }, currentPosition.getLocation().getLatitude(),
