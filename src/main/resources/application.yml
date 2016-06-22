@@ -7,6 +7,7 @@ server:
 #        input.destination: vehicles
 eureka.instance.hostname: localhost
 eureka.instance.leaseRenewalIntervalInSeconds: 5
+logging.level.com.netflix.hystrix.AbstractCommand: DEBUG
 ---
 spring:
   profiles: test

@@ -20,7 +20,7 @@ import org.springframework.web.client.RestTemplate;
 import java.io.IOException;
 
 @SpringBootApplication
-@EnableDiscoveryClient
+//@EnableDiscoveryClient
 @EnableCircuitBreaker
 @EnableBinding(Processor.class)
 @MessageEndpoint
